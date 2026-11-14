@@ -11,7 +11,6 @@ import swaggerJsdoc from "swagger-jsdoc";
 
 const app = express();
 
-const unusedVariable = "CI Failure Test";
 // Middleware
 app.use(express.json());
 app.use(cors());
