@@ -13,10 +13,13 @@ export default [
   {
     files: ["**/*.js"],
     languageOptions: {
-      ecmaVersion: "latest",
-      sourceType: "module",
-      globals: globals.node,
-    },
+  ecmaVersion: "latest",
+  sourceType: "module",
+  globals: {
+    ...globals.node,
+    ...globals.jest,
+  },
+},
     rules: {
       ...js.configs.recommended.rules,
     },
